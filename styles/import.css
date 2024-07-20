@@ -1,5 +1,14 @@
+/*public/assets/styles/import.css*/
+/* this is the stylesheet from the html repo, I am refactoring it into
+
+- a global stylesheet for fonts and colours
+- folders and modules for individual component structures (not colour etc., just placement)
+- some of the styles can be refactored into bootstrap to reduce 
+*/
+
+
 /*CSS STYLESHEET*/
-/* This CSS Stylesheet is structured by Fixed Styling and Responsive Design Utilities*/
+/* This CSS Stylesheet is structured by Fixed Styling and Responsive Design Utilities it was meant to be used with an html project*/
 
 
 /*FIXED STYLING - TYPEFACES*/
