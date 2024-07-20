@@ -2,15 +2,20 @@
 'use client';
 
 import { useState } from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import Link from 'next/link';
+import styles from './Navbar.module.css'; // not sure if this is the correct path
 
 const CustomNavbar = () => {
   return (
-    <Navbar expand="lg" bg="light" variant="light">
-      <Container>
+    <Navbar expand="lg" bg="light" variant="light" className={`${styles.navbar} custom-navbar`}>
+      <Container className={`${styles.customContainer} custom-container`}>
         <Navbar.Brand as={Link} href="/">
-          <img src="/assets/media/navbarlogo-smallest.png" alt="Hoverboard Company Logo" style={{ maxHeight: '57px' }} />
+          <img
+            src="/assets/media/navbarlogo-smallest.png"
+            alt="Hoverboard Company Logo"
+            style={{ maxHeight: '50px' }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

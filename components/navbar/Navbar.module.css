@@ -1,6 +1,8 @@
 /* components/Navbar/Navbar.module.css */
+/*select the image component in the navbar*/
 
-.navbar {
+/* Ensure higher specificity with class nesting */
+.navbar.custom-navbar {
   background-color: var(--white);
   overflow: hidden;
   position: relative;
@@ -10,15 +12,26 @@
   padding: 0 1rem;
 }
 
+@media screen and (max-width: 318px) {
+.customContainer {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Ensure no wrapping */
+  justify-content: center !important; /* Default justify-content */
+}
+}
+
+
+.logoContainer img {
+  width: 90%;
+  height: 100px;
+  object-fit: contain;
+}
+
 .navbartitleLink {
   display: flex;
   align-items: center;
 }
 
-.navbartitle {
-  width: auto;
-  max-height: 57px;
-}
 
 .icon {
   display: none;
