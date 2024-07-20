@@ -1,13 +1,13 @@
-"use client";
-
+import React from 'react';
 import CustomNavbar from '@/components/Navbar/Navbar';
-import Image from 'next/image';
 
-export default function Home() {
+const SignUp = () => {
   return (
     <div>
       <CustomNavbar />
-      <h1>Home Page 1</h1>
+      <h1>Sign Up</h1>
     </div>
   );
-}
+};
+
+export default SignUp;
