@@ -1,13 +1,14 @@
 "use client";
 
 import CustomNavbar from '@/components/Navbar/Navbar';
+import HeroLanding from '@/components/mainpage/HeroLanding/HeroLanding';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <div>
       <CustomNavbar />
-      <h1>Home Page 1</h1>
+      <HeroLanding />
     </div>
   );
 }

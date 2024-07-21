@@ -4,7 +4,6 @@
 
 import React from 'react';
 import CustomNavbar from '@/components/Navbar/Navbar'; // seems to import the navbar but not the styling
-import styles from '@/app/globals.css';
 
 const Features = () => {
   return (
