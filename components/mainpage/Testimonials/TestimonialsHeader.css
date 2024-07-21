@@ -1,0 +1,22 @@
+#testimonials-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#testimonials-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+img#testimonial-logo-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}

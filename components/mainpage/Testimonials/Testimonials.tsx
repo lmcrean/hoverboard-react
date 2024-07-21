@@ -5,11 +5,6 @@ import './Testimonials.css';
 const Testimonials = () => {
   return (
     <section id="testimonials-feature" className="display-grid">
-      <div className="testimonials-intro">
-        <h2>What our users are saying about</h2><br />
-        <img src="/assets/media/navbarlogo.png" alt="inline-logo" id="testimonial-logo-inline" />
-      </div>
-
       <img src="/assets/media/david-martinez.webp" alt="user image" 
            className="user-image david-martinez grid-group-A tablet-image-on-left tablet-row-1 laptop-grid-column-1 laptop-row-1-left" />
       <p className="testimonial-text david-martinez grid-group-A tablet-image-on-left tablet-row-1 laptop-row-1-left laptop-grid-column-2">
