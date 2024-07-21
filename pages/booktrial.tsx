@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomNavbar from '@/components/Navbar/Navbar';
+import CustomNavbar from '../components/Navbar/Navbar'; 
 
 const SignUp = () => {
   return (
