@@ -5,17 +5,16 @@ import './FeaturesCalltoAction.css';
 
 const FeaturesCallToAction = () => {
     return (
-        <section id="features-call-to-action" className="display-grid">
-        <div className="background-wrapper background-wrapper-black">
-        <img src="assets/media/features-intro.png" alt="Features introduction on mock-up browser window"></img>
-        <div id="features-h2-p-button" className="text-float-right text-white">
-        <h2>Curious about our Features?</h2>
-        <p>Let us show you our cutting edge technology.</p>
-        <div className="button">
-        <a href="features.html">
-            read more here
-        </a>
-        </div>
+        <section className="features-call-to-action display-grid">
+        <img className="features-intro-image" src="assets/media/features-intro.png" alt="Features introduction on mock-up browser window"></img>
+        <div className="background-wrapper background-wrapper-black"></div>
+        <div className="features-h2-p-button text-float-right text-white">
+            <h2>Curious about our Features?</h2>
+            <p>Let us show you our cutting edge technology.</p>
+            <div className="button">
+            <a href="features.html">
+                read more here
+            </a>
         </div>
         </div>
         </section>
