@@ -1,3 +1,5 @@
+/*components/mainpage/MissionIntro/mission-intro.css*/
+
 #mission-intro {
     margin-top: 8rem;
     max-width: 1200px;
@@ -78,12 +80,12 @@
 
     #app-intro-nested {
       grid-area: 2/2/4/3;
-      margin-top: 17em;
-      max-height: 21em;
+      margin: 22em auto 0px;
+      max-height: 25em;
     }
 
-    #app-wrapper {
-      max-height: 7em;
+    .app-wrapper {
+      max-height: 21em;
     }
   }
   
@@ -135,7 +137,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+
   }
   
   .feature-item {
@@ -143,8 +145,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: var(--orange);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
   }
   
@@ -154,6 +155,6 @@
   }
   
   .feature-item p {
-    color: var(--white);
+    color: var(--black-medium);
     font-weight: bold;
   }
