@@ -1,7 +1,7 @@
 // components/mainpage/FeaturesCalltoAction/FeaturesCalltoAction.tsx
 
 import React from 'react';
-import './FeaturesCalltoAction.css';
+import './FeaturesCalltoAction.module.css';
 
 const FeaturesCallToAction = () => {
     return (
