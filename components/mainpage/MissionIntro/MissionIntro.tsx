@@ -1,5 +1,5 @@
 import React from 'react';
-import './MissionIntro.css';
+import './MissionIntro.module.css';
 
 const MissionIntro: React.FC = () => {
   return (
