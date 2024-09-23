@@ -4,6 +4,8 @@ import '../app/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from '../components/Navbar/Navbar'; 
 import HeroLanding from '../components/mainpage/HeroLanding/HeroLanding';
+import '../app/base.css'
+import '../app/variables.css'
 
 import { AppProps } from 'next/app';
 
