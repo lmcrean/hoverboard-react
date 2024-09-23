@@ -1,6 +1,6 @@
 // components/mainpage/Testimonials/Testimonials.tsx
 import React from 'react';
-import './Testimonials.css';
+import './Testimonials.module.css';
 
 const Testimonials = () => {
   return (

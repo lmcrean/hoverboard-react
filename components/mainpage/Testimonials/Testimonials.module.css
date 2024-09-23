@@ -9,35 +9,7 @@
 /* This CSS Stylesheet is structured by Fixed Styling and Responsive Design Utilities it was meant to be used with an html project*/
 
 
-/*FIXED STYLING - TYPEFACES*/
 
-/* these type selectors are all Glacial Indifference, but with some small changes in style*/
-h3 {font-weight: 700 !important; /*bolden text*/}
-h4 {font-style:italic;/*italicize text*/}
-h5 {font-size: 0.7rem;/*reduce font size*/}
-
-/*FIXED STYLING - COLORS*/
-/*Root variables are used to define the color palette. The colors are used throughout the stylesheet. It's a useful function because it allows the color palette to be changed easily.*/
-
-:root {
---orange: #ff8400; /* Brand color */
---lightblue: #add8e6; /*background color*/
-
-/*Harmonious palette*/
---orangered: #ff4500;
---salmon: #fa8072;
---lightsalmon: #ffa07a;
---yellow: #ffd000;
---transparent-orange: #ffa6007e;
-
-/*Neutral palette*/
---black-dark: #1e1e1e;
---black-medium: #313131;
---black-light: #434343;
---lightgrey:#d3d3d3;
---grey: #808080;
---white: #ffffff;
-}
 
 
 .menu-items a:hover { 
