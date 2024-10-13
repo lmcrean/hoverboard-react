@@ -1,6 +1,6 @@
 /*components/mainpage/MissionIntro/mission-intro.css*/
 
-#mission-intro {
+.mission-intro {
     margin-top: 8rem;
     max-width: 1200px;
     margin: auto;
@@ -17,7 +17,7 @@
     }
   }
   
-  #bg-squiggle-spring {
+  .bg-squiggle-spring {
     margin: -29rem 0 0 0;
     object-fit: contain;
     max-width: 100%;
@@ -27,7 +27,7 @@
     grid-area: 1/1/3/3;
   }
   
-  #mission-heading {
+  .mission-heading {
     grid-area: 1/1/2/3;
     text-align: center;
     align-content: center;
@@ -36,7 +36,7 @@
     z-index: 5;
   }
   
-  #mission-image {
+  .mission-image {
     object-fit: contain;
     max-width: 90%;
     height: auto;
@@ -45,42 +45,42 @@
     margin: auto;
   }
   
-  #bg-squiggle-flash {
+  .bg-squiggle-flash {
     object-fit: contain;
     margin: auto;
     max-width: 100%;
     grid-area: 3/2/4/3;
   }
   
-  #mission-more-info {
+  .mission-more-info {
     grid-area: 4 / 1 / 5 / 3;
     text-align: center;
     align-content: center;
     margin: auto;
   }
 
-  #app-intro-nested {
+  .app-intro-nested {
     border-radius: 1em;
   }
   
   @media (min-width: 768px) {
-    #mission-image {
+    .mission-image {
       grid-area: 2/1/4/2;
     }
   
-    #bg-squiggle-flash {
+    .bg-squiggle-flash {
       grid-area: 1/2/4/3;
     }
   
-    #mission-more-info {
+    .mission-more-info {
       grid-area: 2/2/3/3;
       text-align: left;
       margin-top: 3em !important;
     }
 
-    #app-intro-nested {
+    .app-intro-nested { /* this class only appears on the larger devices */
       grid-area: 2/2/4/3;
-      margin: 22em auto 0px;
+      margin: 14em auto 0px;
       max-height: 25em;
     }
 
@@ -90,33 +90,33 @@
   }
   
   @media (min-width: 1208px) {
-    #mission-heading {
+    .mission-heading {
       margin-top: 1em;
     }
 
-    #bg-squiggle-spring {
+    .bg-squiggle-spring {
       grid-area: 1/1/4/3;
       margin: -23rem 0 0 0;
       max-width: 67rem;
     }
     
-    #mission-more-info {
+    .mission-more-info {
       text-align: left;
       padding: 0 5rem;
       margin: 12rem auto auto;
     }
 
-    #bg-squiggle-flash {
+    .bg-squiggle-flash {
       margin-left: 17em;
     }
   
-    #app-intro-nested {
+    .app-intro-nested {
       flex-direction: column;
     }
   }
   
   @media (min-width: 1728px) {
-    #mission-image {
+    .mission-image {
       grid-area: 2/1/4/2;
     }
   }
@@ -125,6 +125,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    .features-wrapper {
+      grid-area: 5/1/6/3;
+    }
   }
   
   .features-heading-container {
