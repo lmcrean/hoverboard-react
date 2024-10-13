@@ -1,4 +1,4 @@
-#testimonials-header {
+.testimonials-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,14 +6,14 @@
   margin-top: 50px;
 }
 
-#testimonials-intro {
+.testimonials-intro {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-img#testimonial-logo-inline {
+.testimonial-logo-inline {
   display: flex;
   justify-content: center;
   align-items: center;

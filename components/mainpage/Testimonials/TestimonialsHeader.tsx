@@ -1,15 +1,15 @@
 import React from "react";
-import './TestimonialsHeader.css';
+import styles from './TestimonialsHeader.module.css';
 
-const TestimonialsIntro = () => {
+const TestimonialsHeader = () => {
     return (
-      <section id="testimonials-header">
-        <div className="testimonials-intro">
+      <section className={styles['testimonials-header']}>
+        <div className={styles['testimonials-intro']}>
           <h2>What our users are saying about</h2>
-          <img src="assets/media/navbarlogo.png" alt="inline-logo" id="testimonial-logo-inline"></img>
+          <img src="assets/media/navbarlogo.png" alt="inline-logo" className={styles['testimonial-logo-inline']} />
         </div>
       </section>
     );
   };
 
-export default TestimonialsIntro;
+export default TestimonialsHeader;
