@@ -8,7 +8,6 @@ import CustomNavbar from '../components/Navbar/Navbar';
 const Features = () => {
   return (
     <div>
-      <CustomNavbar />
       <h1>Features Page</h1>
     </div>
   );
