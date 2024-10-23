@@ -1,11 +1,16 @@
 import React from 'react';
 import CustomNavbar from '../components/Navbar/Navbar'; 
+import SignUpHeader from '@/components/signuppage/SignUpHeader';
+import SignUpForm from '@/components/signuppage/SignUpForm';
+import Footer from '@/components/Footer';
 
 const SignUp = () => {
   return (
-    <div>
-      <h1>Sign Up</h1>
-    </div>
+    <main className="pt-16">
+      <SignUpHeader />
+      <SignUpForm />
+      <Footer />
+    </main>
   );
 };
 
