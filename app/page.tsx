@@ -8,6 +8,7 @@ import TestimonialsIntro from '../components/mainpage/Testimonials/TestimonialsH
 import FeaturesCallToAction from '../components/mainpage/FeaturesCalltoAction/FeaturesCalltoAction';
 import SignupCalltoAction from '@/components/mainpage/SignupCalltoAction/SignupCalltoAction';
 import Image from 'next/image';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonials />
       <FeaturesCallToAction />
       <SignupCalltoAction />
+      <Footer />
     </div>
   );
 }
