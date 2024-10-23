@@ -5,12 +5,12 @@ import { Page, Locator } from 'playwright';
 const BASE_URL = 'http://localhost:3000';
 
 const devices = [
-  { name: 'mobile', width: 375, height: 667 },
-  { name: 'tablet', width: 768, height: 1024 },
-  { name: 'laptop-small', width: 1024, height: 768 },
-  { name: 'laptop', width: 1366, height: 768 },
-  { name: 'desktop', width: 1920, height: 1080 },
-  { name: 'desktop-large', width: 2560, height: 1440 }
+  { name: '375-mobile', width: 375, height: 667 },
+  { name: '768-tablet', width: 768, height: 1024 },
+  { name: '1024-laptop-small', width: 1024, height: 768 },
+  { name: '1366-laptop', width: 1366, height: 768 },
+  { name: '1920-desktop', width: 1920, height: 1080 },
+  { name: '2560-desktop-large', width: 2560, height: 1440 }
 ];
 
 export async function captureScreenshot(page: Page, testName: string, pageName: string, elementToFocus?: Locator) {
@@ -40,14 +40,6 @@ export async function captureScreenshot(page: Page, testName: string, pageName: 
       await elementToFocus.scrollIntoViewIfNeeded();
       // Wait a bit for any animations to complete
       await page.waitForTimeout(500);
-
-      // For mobile view, capture the full section
-      if (device.name === 'mobile') {
-        const boundingBox = await elementToFocus.boundingBox();
-        if (boundingBox) {
-          await page.setViewportSize({ width: device.width, height: Math.ceil(boundingBox.height) });
-        }
-      }
     }
     
     const fileName = `${device.name}.png`;
@@ -66,5 +58,3 @@ export async function setupPage(page: Page, route: string) {
   await page.goto(`${BASE_URL}${route}`);
   await page.waitForLoadState('networkidle');
 }
-
-// Add more utility functions as needed
