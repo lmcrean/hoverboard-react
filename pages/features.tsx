@@ -3,13 +3,15 @@
 "use client"
 
 import React from 'react';
-import CustomNavbar from '../components/Navbar/Navbar'; 
+import FeaturesHeader from '../components/featurespage/FeaturesHeader/FeaturesHeader';
+import FeaturesDetail from '../components/featurespage/FeaturesDetail/FeaturesDetail';
 
 const Features = () => {
   return (
-    <div>
-      <h1>Features Page</h1>
-    </div>
+    <main className="pt-16"> {/* Add padding-top to account for fixed navbar */}
+      <FeaturesHeader />
+      <FeaturesDetail />
+    </main>
   );
 };
 
