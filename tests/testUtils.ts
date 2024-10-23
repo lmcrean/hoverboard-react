@@ -17,40 +17,41 @@ export async function captureScreenshot(page: Page, testName: string, pageName: 
   const screenshotBaseDir = path.join('tests', 'screenshots', testName);
   const screenshotDir = path.join(screenshotBaseDir, pageName);
 
-  // Ensure the directory exists
+  // Setup directories
   if (!fs.existsSync(screenshotDir)) {
     fs.mkdirSync(screenshotDir, { recursive: true });
   } else {
-    // Delete existing screenshots in this directory
-    fs.readdirSync(screenshotDir).forEach((file) => {
-      const filePath = path.join(screenshotDir, file);
-      if (file.endsWith('.png')) {
-        fs.unlinkSync(filePath);
-      }
-    });
+    fs.readdirSync(screenshotDir)
+      .filter(file => file.endsWith('.png'))
+      .forEach(file => fs.unlinkSync(path.join(screenshotDir, file)));
   }
 
   for (const device of devices) {
     console.log(`Capturing screenshot for ${device.name} view of ${pageName}`);
-    await page.setViewportSize({ width: device.width, height: device.height });
+    
+    // First set width only
+    await page.setViewportSize({ width: device.width, height: 800 });
     await page.waitForLoadState('networkidle');
 
-    // If an element to focus is provided, scroll it into view
     if (elementToFocus) {
       await elementToFocus.scrollIntoViewIfNeeded();
-      // Wait a bit for any animations to complete
+      
+      // Get element dimensions
+      const boundingBox = await elementToFocus.boundingBox();
+      if (boundingBox) {
+        // Set viewport height to match content with some padding
+        await page.setViewportSize({ 
+          width: device.width, 
+          height: Math.ceil(boundingBox.height + 2000) // Add padding
+        });
+      }
       await page.waitForTimeout(500);
     }
     
-    const fileName = `${device.name}.png`;
     await page.screenshot({
-      path: path.join(screenshotDir, fileName),
+      path: path.join(screenshotDir, `${device.name}.png`),
+      fullPage: true,
     });
-
-    // Reset viewport size after capturing mobile screenshot
-    if (device.name === 'mobile') {
-      await page.setViewportSize({ width: device.width, height: device.height });
-    }
   }
 }
 

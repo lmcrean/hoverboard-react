@@ -50,7 +50,8 @@ const FeaturesCallToAction = () => {
               tablet:text-lg 
               laptop:text-xl 
               mb-6
-              max-w-xl">
+              max-w-xl
+              mx-auto">
               Let us show you our cutting edge technology.
             </p>
             
