@@ -127,9 +127,10 @@
     align-items: center;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     .features-wrapper {
       grid-area: 5/1/6/3;
+      margin-top: 20px;
     }
   }
   
@@ -137,13 +138,13 @@
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 3em;
+    margin-left: auto;
   }
   
   .app-wrapper {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
   }
   
   .feature-item {

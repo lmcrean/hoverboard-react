@@ -11,6 +11,12 @@ const config: Config = {
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
+      'mobile': '375px',
+      'tablet': '768px',
+      'laptop-small': '1024px',
+      'laptop': '1366px',
+      'desktop': '1920px',
+      'desktop-large': '2560px',
     },
     extend: {
       backgroundImage: {

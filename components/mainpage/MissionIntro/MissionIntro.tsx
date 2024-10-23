@@ -13,22 +13,22 @@ const MissionIntro: React.FC = () => {
         More than ever, they are in need to function efficiently and effectively to meet the needs of our students. <br /><br />
         Designed by real classroom teachers, Hoverboard offers meaningful features...
       </p>
-      <div className={`${styles['app-intro-nested']} ${styles['features-wrapper']} ${styles['hide-in-mobile-and-tablet']} ${styles['show-in-laptop-and-desktop']}`}>
-        <div className={styles['features-heading-container']}>
+      <div className={`${styles['app-intro-nested']} ${styles['features-wrapper']} ${styles['hide-in-mobile-and-tablet']} ${styles['show-in-laptop-and-desktop']} mx-auto`}>
+        <div className={styles['features-heading-container mx-auto']}>
           <h2>Features for Teachers</h2>
         </div>
-        <div className={styles['app-wrapper']}>
-          <div className={styles['feature-item']}>
-            <img src="assets/media/gallery-view.png" alt="Gallery View app icon" />
-            <p>Gallery View</p>
+        <div className="flex flex-col mobile:flex-row justify-center items-center gap-6 px-4 mx-auto">
+          <div className="flex flex-col items-center w-full sm:w-1/3">
+            <img src="assets/media/gallery-view.png" alt="Gallery View app icon" className="w-16 h-16 mb-2" />
+            <p className="text-center">Gallery View</p>
           </div>
-          <div className={styles['feature-item']}>
-            <img src="assets/media/peer-feedback.png" alt="Peer Feedback app icon" />
-            <p>Peer Feedback</p>
+          <div className="flex flex-col items-center w-full sm:w-1/3">
+            <img src="assets/media/peer-feedback.png" alt="Peer Feedback app icon" className="w-16 h-16 mb-2" />
+            <p className="text-center">Peer Feedback</p>
           </div>
-          <div className={styles['feature-item']}>
-            <img src="assets/media/deep-assessment.png" alt="Deep Assessment app icon" />
-            <p>Deep Assessment</p>
+          <div className="flex flex-col items-center w-full sm:w-1/3">
+            <img src="assets/media/deep-assessment.png" alt="Deep Assessment app icon" className="w-16 h-16 mb-2" />
+            <p className="text-center">Deep Assessment</p>
           </div>
         </div>
       </div>
