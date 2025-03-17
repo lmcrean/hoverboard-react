@@ -1,0 +1,209 @@
+/* app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb)); /* Updated to set a solid background color */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Global Stylesheet for Fonts and Colors */
+
+/* Font Definitions */
+@font-face {
+  font-family: 'glacialindifference';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Glacial Indifference'),
+       url('https://fonts.cdnfonts.com/s/31913/GlacialIndifference-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PeaceSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Peace Sans'), url('https://fonts.cdnfonts.com/s/16323/peace_sans.woff') format('woff');
+  font-display: swap;
+}
+
+/* Font Usage */
+h1, h2, label {
+  font-family: 'PeaceSans', sans-serif;
+}
+
+p, h3, h4, h5, a, form input {
+  font-family: 'glacialindifference', sans-serif;
+}
+
+h3 {
+  font-weight: 700 !important; /* Bold text */
+}
+
+h4 {
+  font-style: italic; /* Italic text */
+}
+
+h5 {
+  font-size: 0.7rem; /* Smaller font size */
+}
+
+/* Color Palette */
+:root {
+  --orange: #ff8400; /* Brand color */
+  --lightblue: #add8e6; /* Background color */
+  --orangered: #ff4500;
+  --salmon: #fa8072;
+  --lightsalmon: #ffa07a;
+  --yellow: #ffd000;
+  --transparent-orange: #ffa6007e;
+  --black-dark: #1e1e1e;
+  --black-medium: #313131;
+  --black-light: #434343;
+  --lightgrey: #d3d3d3;
+  --grey: #808080;
+  --white: #ffffff;
+}
+
+/* Common Colors */
+.button a, #myBtn {
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+#myBtn {
+  background-color: var(--salmon);
+  border-color: var(--white);
+}
+
+#myBtn:hover {
+  background-color: var(--orangered);
+}
+
+.button a:hover {
+  background-color: var(--yellow);
+  color: var(--black-medium);
+}
+
+.navbar {
+  background-color: var(--white);
+}
+
+.navbar .icon #icon-open,
+.navbar .icon #icon-close,
+.navbar.menuOpen .icon #icon-close {
+  color: var(--orange);
+}
+
+.menu-items a {
+  color: var(--black-medium);
+}
+
+a.tab-active {
+  background-color: var(--lightgrey);
+}
+
+.menu-items a:hover {
+  background-color: var(--lightsalmon);
+  color: var(--white);
+}
+
+.navbar.menuOpen {
+  background-color: var(--white);
+}
+
+footer {
+  background-color: var(--lightblue);
+}
+
+.footer-links a {
+  background-color: var(--grey);
+}
+
+.footer-links a:hover {
+  background-color: var(--black-light);
+}
+
+.hero-heading {
+  background-color: var(--transparent-orange);
+  color: var(--white);
+}
+
+.testimonial-name, .testimonial-title {
+  color: var(--black-medium);
+}
+
+.testimonial-background-blue {
+  background-color: var(--lightblue);
+}
+
+.testimonial-background-orange {
+  background-color: var(--lightsalmon);
+}
+
+.features-wrapper,
+.heading-container,
+#booktrial-landing .heading-container,
+button[type="submit"] {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black-medium {
+  color: var(--black-medium);
+}
+
+.air-quotations {
+  mix-blend-mode: screen;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Transitions */
+.button a, #myBtn, .menu-items a, button[type="submit"], header, a {
+  transition: 0.5s;
+}
+
+main {
+  transition: margin-top 0.45s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--salmon);
+}
+
+.button a:hover {
+  background-color: var(--yellow);
+  color: var(--black-medium);
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  background-color: var(--black-light);
+}
