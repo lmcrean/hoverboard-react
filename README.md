@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/assets/media/navbarlogo.png" width="300px" >
+<!-- <img src="/assets/media/navbarlogo.png" width="300px" > -->
 
 #  Responsive Website for a Virtual Classroom Product <!-- omit in toc -->
 
