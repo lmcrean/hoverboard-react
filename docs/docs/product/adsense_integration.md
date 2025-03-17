@@ -1,6 +1,6 @@
 # AdSense Integration
 
-This document details the implementation of Google AdSense in Tributary and revenue projections.
+This document details the implementation of Google AdSense in Hoverboard and revenue projections.
 
 ## Conservative AdSense Revenue Projections
 

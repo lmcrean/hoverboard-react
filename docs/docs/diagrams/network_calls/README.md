@@ -1,6 +1,6 @@
 # Network Calls and Data Flow
 
-This directory contains diagrams and documentation for key network calls and data flows in the Tributary application. Each file focuses on a specific user action and includes:
+This directory contains diagrams and documentation for key network calls and data flows in the Hoverboard application. Each file focuses on a specific user action and includes:
 
 1. **Overview Diagram** - A simplified sequence diagram showing the basic user-to-database flow
 2. **Detailed Implementation Diagram** - A comprehensive diagram showing the actual AWS implementation with optimizations

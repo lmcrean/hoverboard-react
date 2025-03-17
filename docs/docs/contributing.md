@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Contributing Guide
 
-Thank you for your interest in contributing to the Tributary project! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to the Hoverboard project! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -14,11 +14,11 @@ Please read our [Code of Conduct](./code_of_conduct.md) before participating in 
 
 ### Reporting Bugs
 
-If you find a bug, please report it by creating an issue in our [GitHub repository](https://github.com/lmcrean/tributary/issues).
+If you find a bug, please report it by creating an issue in our [GitHub repository](https://github.com/lmcrean/hoverboard-react/issues).
 
 ### Suggesting Enhancements
 
-We welcome suggestions for enhancements to the project. Please submit your ideas as issues in our [GitHub repository](https://github.com/lmcrean/tributary/issues).
+We welcome suggestions for enhancements to the project. Please submit your ideas as issues in our [GitHub repository](https://github.com/lmcrean/hoverboard-react/issues).
 
 ### Pull Requests
 

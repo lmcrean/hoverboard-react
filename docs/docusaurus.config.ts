@@ -5,15 +5,15 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Tributary',
-  tagline: 'Documentation for the Tributary project',
+  title: 'Hoverboard',
+  tagline: 'Documentation for the Hoverboard project',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://lmcrean.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/tributary/',
+  baseUrl: '/hoverboard-react/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -39,7 +39,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/lmcrean/tributary/tree/main/docs/',
+            'https://github.com/lmcrean/hoverboard-react/tree/main/docs/',
           routeBasePath: '/', // Set docs as the root
         },
         blog: false,
@@ -59,9 +59,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Tributary',
+      title: 'Hoverboard',
       logo: {
-        alt: 'Tributary Logo',
+        alt: 'Hoverboard Logo',
         src: 'img/logo.svg',
         href: '/',
       },
@@ -73,7 +73,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/lmcrean/tributary',
+          href: 'https://github.com/lmcrean/hoverboard-react',
           label: 'GitHub',
           position: 'right',
         },
@@ -96,12 +96,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/lmcrean/tributary',
+              href: 'https://github.com/lmcrean/hoverboard-react',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Tributary Project. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hoverboard Project. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

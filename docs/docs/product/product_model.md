@@ -1,10 +1,10 @@
-# Tributary Product Model
+# Hoverboard Product Model
 
-This document provides an overview of Tributary's monetization strategy and product model. For detailed information, see the linked documents.
+This document provides an overview of Hoverboard's monetization strategy and product model. For detailed information, see the linked documents.
 
 ## Overview
 
-Tributary uses a freemium model with two tiers:
+Hoverboard uses a freemium model with two tiers:
 
 1. **Free Tier with Ads**: Basic functionality with strict limits and Google AdSense integration
 2. **Premium Tier**: Expanded functionality, higher limits, and no ads

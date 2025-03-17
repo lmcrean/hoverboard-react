@@ -1,6 +1,6 @@
 # Success Metrics and Validation Plan
 
-This document outlines the key metrics for evaluating Tributary's success and the decision-making process at the end of the 6-month MVP phase.
+This document outlines the key metrics for evaluating Hoverboard's success and the decision-making process at the end of the 6-month MVP phase.
 
 ## Success Metrics (Month 6)
 
@@ -92,17 +92,17 @@ If the product fails to meet minimum success metrics by month 6:
      for (const user of users.docs) {
        await sendEmail({
          to: user.data().email,
-         subject: 'Important Notice: Tributary Service Update',
+         subject: 'Important Notice: Hoverboard Service Update',
          body: `
            Dear ${user.data().name},
            
-           We regret to inform you that Tributary will be shutting down on ${SUNSET_DATE}.
+           We regret to inform you that Hoverboard will be shutting down on ${SUNSET_DATE}.
            
            You can export your data until that date by visiting your account settings.
            
            Thank you for being part of our journey.
            
-           The Tributary Team
+           The Hoverboard Team
          `
        });
      }

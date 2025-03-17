@@ -2,9 +2,9 @@
 slug: /
 ---
 
-# Introduction to Tributary
+# Introduction to Hoverboard
 
-Welcome to the Tributary documentation! This documentation will help you understand the project's architecture, development practices, and how to contribute.
+Welcome to the Hoverboard documentation! This documentation will help you understand the project's architecture, development practices, and how to contribute.
 
 ## Quick Links
 
@@ -14,7 +14,7 @@ Welcome to the Tributary documentation! This documentation will help you underst
 
 ## Getting Started
 
-Tributary is a modern web application that [brief description of your project]. This documentation will help you:
+Hoverboard is a modern web application that [brief description of your project]. This documentation will help you:
 
 1. Understand the project structure
 2. Set up your development environment

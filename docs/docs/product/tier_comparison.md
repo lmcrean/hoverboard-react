@@ -1,6 +1,6 @@
 # Tier Comparison
 
-This document details the feature differences between Tributary's free and premium tiers. For pricing information, see [Pricing Model](pricing_model.md).
+This document details the feature differences between Hoverboard's free and premium tiers. For pricing information, see [Pricing Model](pricing_model.md).
 
 ## Feature Comparison Table
 

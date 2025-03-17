@@ -1,8 +1,8 @@
-# Tributary Pricing Model
+# Hoverboard Pricing Model
 
 ## Overview
 
-Tributary uses a freemium model with two distinct pricing tiers:
+Hoverboard uses a freemium model with two distinct pricing tiers:
 
 1. **Free Tier**: Supported by advertisements (Google AdSense)
 2. **Premium Tier**: Subscription-based model

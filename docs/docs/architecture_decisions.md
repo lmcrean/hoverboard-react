@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Architecture Decisions
 
-This document outlines the key architectural decisions made in the Tributary project.
+This document outlines the key architectural decisions made in the Hoverboard project.
 
 ## Overview
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Test Coverage
 
-This document provides information about the test coverage in the Tributary project.
+This document provides information about the test coverage in the Hoverboard project.
 
 ## Overview
 

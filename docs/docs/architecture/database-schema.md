@@ -2,7 +2,7 @@
 
 ## Entity Relationship Diagram
 
-Below is the entity relationship diagram for the Tributary application:
+Below is the entity relationship diagram for the Hoverboard application:
 
 ```mermaid
 erDiagram

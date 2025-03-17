@@ -1,6 +1,6 @@
 # Create Keyword
 
-This document outlines the network calls and data flow for creating a keyword in the Tributary application.
+This document outlines the network calls and data flow for creating a keyword in the Hoverboard application.
 
 ## Overview Diagram
 

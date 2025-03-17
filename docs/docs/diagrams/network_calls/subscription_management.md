@@ -1,6 +1,6 @@
 # Subscription Management
 
-This document outlines the network calls and data flow for managing subscriptions in the Tributary application.
+This document outlines the network calls and data flow for managing subscriptions in the Hoverboard application.
 
 ## Overview Diagram
 
@@ -129,8 +129,8 @@ sequenceDiagram
 // POST /api/subscription/create-checkout request
 {
   "priceId": "price_1AbCdEfGhIjKlMnOpQrStUvW",
-  "successUrl": "https://tributary.app/subscription/success",
-  "cancelUrl": "https://tributary.app/subscription/cancel"
+  "successUrl": "https://hoverboard-react.app/subscription/success",
+  "cancelUrl": "https://hoverboard-react.app/subscription/cancel"
 }
 
 // POST /api/subscription/create-checkout response

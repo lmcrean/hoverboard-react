@@ -1,6 +1,6 @@
 # AWS Implementation
 
-This document details the AWS architecture and cost control mechanisms for Tributary's MVP.
+This document details the AWS architecture and cost control mechanisms for Hoverboard's MVP.
 
 ## Serverless-First Architecture
 
