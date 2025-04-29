@@ -6,7 +6,9 @@ erDiagram
     User ||--o{ JobListing : saves
     User ||--o{ UserKeyword : tracks
     User ||--o{ Subscription : has
+    User ||--o{ Contact : manages
     JobListing }o--o{ UserKeyword : contains
+    JobListing }o--o{ Contact : has
     
     User {
         int userId PK
@@ -43,5 +45,21 @@ erDiagram
         string colorCode "HEX"
         boolean isCustom
         int totalMentions "calculated on read"
+    }
+
+    Contact {
+        int contactId PK
+        int userId FK
+        int listingId FK "optional, if contact is from a job listing"
+        string firstName
+        string lastName
+        string email
+        string phone
+        string title
+        string company
+        string notes
+        timestamp createdAt
+        timestamp lastUpdated
+        string status "active/inactive"
     }
 ```
