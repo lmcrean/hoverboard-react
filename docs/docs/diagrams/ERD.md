@@ -4,11 +4,12 @@
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryTextColor': '#ffffff', 'primaryColor': '#ffffff', 'noteBkgColor': '#2b2b2b', 'noteTextColor': '#ffffff' }}}%%
 erDiagram
     User ||--o{ JobListing : saves
-    User ||--o{ ListingKeyword : tracks
+    User ||--o{ JobListingKeyword : tracks
     User ||--o{ Subscription : has
     User ||--o{ Contact : manages
-    JobListing }o--o{ ListingKeyword : contains
+    JobListing }o--o{ JobListingKeyword : contains
     JobListing }o--o{ Contact : has
+    JobListingKeyword }o--o{ JobListingKeywordOccurrence : has
     
     User {
         int userId PK
@@ -38,7 +39,7 @@ erDiagram
         timestamp savedDate
     }
     
-    ListingKeyword {
+    JobListingKeyword {
         int keywordId PK
         int userId FK
         string name
@@ -47,6 +48,14 @@ erDiagram
         string colorCode "HEX"
         boolean isCustom
         int totalMentions "calculated on read"
+    }
+
+    JobListingKeywordOccurrence {
+        int occurrenceId PK
+        int keywordId FK
+        int listingId FK
+        int count "number of times keyword appears in listing"
+        timestamp createdAt
     }
 
     Contact {
