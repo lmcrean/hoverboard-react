@@ -4,10 +4,10 @@
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryTextColor': '#ffffff', 'primaryColor': '#ffffff', 'noteBkgColor': '#2b2b2b', 'noteTextColor': '#ffffff' }}}%%
 erDiagram
     User ||--o{ JobListing : saves
-    User ||--o{ UserKeyword : tracks
+    User ||--o{ ListingKeyword : tracks
     User ||--o{ Subscription : has
     User ||--o{ Contact : manages
-    JobListing }o--o{ UserKeyword : contains
+    JobListing }o--o{ ListingKeyword : contains
     JobListing }o--o{ Contact : has
     
     User {
@@ -36,7 +36,7 @@ erDiagram
         timestamp savedDate
     }
     
-    UserKeyword {
+    ListingKeyword {
         int keywordId PK
         int userId FK
         string name
@@ -51,10 +51,7 @@ erDiagram
         int contactId PK
         int userId FK
         int listingId FK "optional, if contact is from a job listing"
-        string firstName
-        string lastName
-        string email
-        string phone
+        string name
         string title
         string company
         string notes
