@@ -33,6 +33,8 @@ erDiagram
         string company
         string jobTitle
         string fullText
+        string status "bookmarked/applied/interviewing/offered/hired/rejected"
+        string notes
         timestamp savedDate
     }
     
@@ -57,6 +59,6 @@ erDiagram
         string notes
         timestamp createdAt
         timestamp lastUpdated
-        string status "active/inactive"
+        string status "bookmarked/contacted"
     }
 ```
